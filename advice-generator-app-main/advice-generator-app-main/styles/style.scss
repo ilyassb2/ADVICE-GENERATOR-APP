@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+$mainBgColor: hsl(218, 23%, 16%);
+$mainDivColor: hsl(217, 19%, 24%);
+$QuoteClr: hsl(193, 38%, 86%);
+$btnClr: hsl(150, 100%, 66%);
+$BtnOrigin: #098f77;
+$QuoteFont: 28px;
+
+@mixin flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: $mainBgColor;
+  @include flex-container();
+}
+.container-main {
+  position: relative;
+  margin-top: 170px;
+  width: 550px;
+  height: 320px;
+  background-color: $mainDivColor;
+  border-radius: 25px;
+  @include flex-container();
+  flex-direction: column;
+}
+
+.advice-id {
+  text-align: center;
+  color: $BtnOrigin;
+  font-weight: 800;
+}
+.advice {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: $QuoteClr;
+  margin-top: 30px;
+}
+.divider {
+  margin-top: 32px;
+}
+.btn-Generate {
+  position: absolute;
+  border: none;
+  background-color: $BtnOrigin;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: 285px;
+  left: 243px;
+}
+.btn-img {
+  position: absolute;
+  left: 23px;
+  top: 23.5px;
+}
